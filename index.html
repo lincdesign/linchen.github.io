@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Holiday</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="responsiveslides.js"></script>
+	<link rel="icon image_src" href="images/favicon.ico">
+</head>
+
+<body>
+
+<header>
+	<h1>Holiday Start Here</h1>
+</header>
+
+	<div id="wrapper">
+
+		<div id="container">
+
+			<div class="rslides-container">
+	  			<ul class="rslides">
+	     			<li><img src="images/accommodation.jpg" alt="Dismemberment sculpture"></li>
+          			<li><img src="images/drink.jpg" alt="Red Cloud Confrontation sculpture"></li>
+          			<li><img src="images/family.jpg" alt="Pyramid Sculpture"></li>
+				</ul>
+			</div>
+
+		</div> <!-- #container-->
+
+	</div> <!-- #wrapper-->
+
+	<footer>
+
+		<p><small> <a href="https://www.behance.net/LINCHENN">Lin Chen</a></small></p>
+
+	</footer>
+
+
+	<script>
+				
+		$(function() {
+    		$(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 1200,            // Integer: Speed of the transition, in milliseconds
+                timeout: 4800,          // Integer: Time between slide transitions, in milliseconds
+                pager: true,            // Boolean: Show pager, true or false
+                nav: true,              // Boolean: Show navigation, true or false
+                random: false,          // Boolean: Randomize the order of the slides, true or false
+                pause: false,           // Boolean: Pause on hover, true or false
+                pauseControls: false,   // Boolean: Pause when hovering controls, true or false
+                prevText: '&#8592;',    // String: Text for the "previous" button
+                nextText: '&#8594;',    // String: Text for the "next" button
+                maxwidth: '',           // Integer: Max-width of the slideshow, in pixels
+                navContainer: '',       // Selector: Where auto generated controls should be appended to, default is after the <ul>
+                manualControls: '',     // Selector: Declare custom pager navigation
+                namespace: 'rslides',   // String: change the default namespace used
+                before: function () {}, // Function: Before callback
+                after: function () {}   // Function: After callback
+        	});
+  		});
+
+	</script>
+
+</body>
+
+</html>
